@@ -39,7 +39,7 @@
 
         <div v-if="showSideNav" @click.self="closeSidenav">
             <a-menu theme="dark" mode="inline"
-                class="border-t border-indigo-900 bg-indigo-100 fixed left-0 top-17 h-screen w-64 px-1 py-3 text-indigo-900 items-center md:hidden">
+                class="border-t border-indigo-900 bg-indigo-100 fixed left-0 top-17 z-40 h-screen w-64 px-1 py-3 text-indigo-900 items-center md:hidden">
                 <a-menu-item key="1" icon-size="24" class="hover:bg-indigo-900" @click="toggleSideNav">
                     <router-link :to="{ name: 'home' }">
                         <HomeOutlined />
@@ -68,7 +68,7 @@
         </div>
 
     </header>
-    <sub-header class="hidden md:flex justify-start  bg-indigo-500 sticky top-0 ">
+    <sub-header class="hidden md:flex justify-start  bg-indigo-500 sticky top-0">
         <a-menu class="flex bg-indigo-500 w-1/2 justify-start items-center mx-auto h-28">
             <a-menu-item key="1" class=" text-2xl h-full ">
                 <router-link :to="{ name: 'home' }"
